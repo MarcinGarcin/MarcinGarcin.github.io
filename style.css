@@ -10,10 +10,11 @@
 
 body {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSjpY6XnhPS-_mibG848WhZ-VPjnfRwBVM4jS6KzxkVyv3dBPrLRhGZm_Fa48fEVb4y6N3m-8-pefb9anThaFYiazN_vhz4wn_g2QF0c5NSQpAG2fOUPriK5xSOwEO0lMqzpT6ge8FkbZkDLfJJDe1sH5IiiapLm9wMoqHMw15zqcsNK1XBOMWhRdUdw/s0/SUNSET-LANDS-12282022.jpg);
+    background-image: url(/assets/background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -66,7 +67,44 @@ button a {
     text-align: center;
     line-height: 100px;
 }
-
 button:hover {
     background-color: rgba(255, 255, 255, 0.5);
+}
+nav {
+    width: 10%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+nav ul li:hover {
+    color: #555;
 }
